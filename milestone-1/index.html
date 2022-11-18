@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue-boolzap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div id="app" class="d-flex justify-content-center align-items-center bg-white">
+        <div class="bg-white h-75 w-75">
+          <div class="container-fluid p-0 h-100">
+            <div class="row h-100">
+                <div class="col-5">
+                    <div class="py-3 d-flex justify-content-between align-items-center">
+                        <div class="container-fluid">
+                            <img id="profilo" src="assets/img/avatar_1.jpg" alt="" class="rounded-circle ">
+                            <span>Simone Picci</span>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa-solid fa-circle-notch mx-2"></i>
+                            <i class="fa-solid fa-message mx-2"></i>
+                            <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+                        </div>
+                    </div>
+                    <div id="sezNotifiche" class="d-flex align-items-center p-3">
+                        <i class="fa-regular fa-bell-slash bg-white rounded-circle p-2 me-3"></i>
+                        <div>
+                            <h5>Ricevi notiiche</h5>
+                            <span>Attiva notifiche</span>
+                        </div>
+                    </div>
+                    <div class="input-group mb-2 mt-2 px-3 d-flex align-items-center ">
+                        <span class="input-group-text bg-light border border-0 " id="basic-addon1">
+                            <i class="fa-solid fa-magnifying-glass p-1 "></i>
+                        </span>
+                        <input type="text" class="form-control bg-light inputMod" placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="basic-addon1">
+                        <i class="fa-solid fa-bars mx-3"></i>
+                      </div>
+                      <div>
+                        <ul class="list-group ">
+                          <li class="list-group-item d-flex align-items-center border border-end-0 border-top-0" v-for="(elem, index) in contacts">
+                            <img src="assets/img/avatar_io.jpg" alt="" class="rounded-circle">
+                            <h6 class="m-1">Lucrezia</h6> 
+                          </li>
+                          <li class="list-group-item d-flex align-items-center border border-end-0 border-top-0">
+                            <img src="assets/img/avatar_2.jpg" alt="" class="rounded-circle">
+                            <h6 class="m-1">Michele</h6>
+                          </li>
+                          <li class="list-group-item d-flex align-items-center border border-end-0 border-top-0">
+                            <img src="assets/img/avatar_3.jpg" alt="" class="rounded-circle">
+                            <h6 class="m-1">Mario</h6>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-7 d-flex flex-column h-100">
+                  <div class="p-3 d-flex justify-content-between align-items-center">
+                    <div class="container-fluid">
+                        <img id="profilo" src="assets/img/avatar_1.jpg" alt="" class="rounded-circle ">
+                        <span>Simone Picci</span>
+                    </div>
+                    <div class="d-flex">
+                      <i class="fa-solid fa-video mx-2"></i>
+                      <i class="fa-solid fa-phone mx-2"></i>
+                      <i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+                  </div>
+                </div>
+                <div id="areaChat" class="h-100 flex-grow-1 d-flex flex-column">
+                  <div class="mioMex">
+                    <p class="mb-0">Finisci gli esercizi !!!</p>
+                  </div>
+                  <div class="suoMex align-self-end">
+                    <p class="mb-0">Ho quasi finitoooo !</p>
+                  </div>
+                </div>
+                <div id="sfondoInp" class="input-group d-flex align-items-center">
+                  <i class="fa-solid fa-face-smile m-3"></i>
+                  <i class="fa-solid fa-paperclip"></i>
+                  <input id="chat" type="text" class="form-control ms-3 inputMod" placeholder="Scrivi un messaggio" aria-label="Username" aria-describedby="basic-addon1">
+                  <i class="fa-solid fa-microphone m-3"></i>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  <scripts src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></scripts>
+  <scripts src="assets/script/main.js"></scriptss>
+</body>
+
+</html>

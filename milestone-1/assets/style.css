@@ -1,0 +1,65 @@
+
+#app{
+    background-image: linear-gradient(to bottom, #009688 0px,  #009688 15vh, #dddbd1 15vh,  #dddbd1 100%);
+    height: 100vh;
+}
+
+#glass{
+    border-radius: 10px;
+}
+
+img{
+    width:50px;
+}
+
+#sezNotifiche{
+    background-color: skyblue;
+}
+
+.inputMod{
+    border: none;
+}
+
+#search{
+    border: none;
+}
+
+#areaChat{
+    background-image: url('./img/mine.jpg');
+    background-size: 100%;
+    height: 100%;
+}
+
+.suoMex{
+    background-color: #c3f1b7;
+    padding: 10px;
+    width: 30%;
+    margin: 20px;
+    border-radius: 10px 0px 10px 10px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.mioMex{
+    background-color: white;
+    padding: 10px;
+    width: 30%;
+    margin: 20px;
+    border-radius: 0px 10px 10px 10px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+#chat{
+    border-radius: 9px;
+    padding: 7px;
+}
+
+#sfondoInp{
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+i{
+    color: grey;
+}
